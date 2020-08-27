@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0
+      author: demo.example
+      changes:
+        - createTable:
+            catalogName: postgres
+            remarks: Example table
+            schemaName: demo
+            tableName: demo
+            columns:
+              - column:
+                  name: id
+                  type: varchar(128)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: value
+                  type: varchar(256)
+                  constraints:
+                    nullable: true

@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0
+      author: demo
+      changes:
+        - sql: create schema demo;
+        - rollback: drop schema demo;

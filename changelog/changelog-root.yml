@@ -1,0 +1,5 @@
+databaseChangeLog:
+      - include:
+              file: changelog/demo/schema.yml
+      - include:
+              file: changelog/demo/example.0.yml
